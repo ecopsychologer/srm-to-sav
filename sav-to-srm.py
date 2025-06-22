@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import sys, getopt
 
@@ -36,10 +36,10 @@ def main(argv):
 		data = infile.read()
 
 		for i in range(139264 - len(data)):
-			outfile.write(chr(255))
+			outfile.write(b'\xFF')
 		
 		if byteswap:
-			for i in range(len(data) / 8):
+			for i in range(len(data) // 8):
 				outfile.write(data[i*8+7])
 				outfile.write(data[i*8+6])
 				outfile.write(data[i*8+5])
