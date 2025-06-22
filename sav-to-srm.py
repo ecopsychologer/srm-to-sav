@@ -51,7 +51,7 @@ def main(argv):
 		else:
 			outfile.write(data)
 			
-		print "Inserted", len(data), "bytes from", inputfile, "to", outputfile
+		print("Inserted", len(data), "bytes from", inputfile, "to", outputfile)
 
 if __name__ == "__main__":
 	main(sys.argv[1:])
