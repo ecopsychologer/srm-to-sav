@@ -3,8 +3,8 @@
 import sys, getopt
 
 def usage():
-	print 'Usage: sav-to-srm.py -i <input.sav> -o <output.srm> [--byteswap]'
-	print 'Converts GBA SAV files to RetroArch SRM format'
+	print('Usage: sav-to-srm.py -i <input.sav> -o <output.srm> [--byteswap]')
+	print('Converts GBA SAV files to RetroArch SRM format')
 
 def main(argv):
 	inputfile = None
