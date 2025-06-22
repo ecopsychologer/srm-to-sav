@@ -35,11 +35,11 @@ def main(argv):
 	with open(inputfile, "rb") as infile, open(outputfile, "wb") as outfile:
 		data = infile.read()
 
-		for i in xrange(139264 - len(data)):
+		for i in range(139264 - len(data)):
 			outfile.write(chr(255))
 		
 		if byteswap:
-			for i in xrange(len(data) / 8):
+			for i in range(len(data) / 8):
 				outfile.write(data[i*8+7])
 				outfile.write(data[i*8+6])
 				outfile.write(data[i*8+5])
